@@ -1,0 +1,20 @@
+#Imports
+library(tidyverse)
+library(dplyr)
+
+#Deliverable 1
+
+mecmpg <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F) #import and read csv
+
+lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=mecmpg) #perform linear regression
+
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=mecmpg)) #summary of linear regression
+
+#Deliverable 2
+
+suscoil <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
+
+total_summary <- group_by(suscoil) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
+
+lot_summary <- suscoil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
+
