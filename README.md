@@ -10,12 +10,12 @@ Linear Regression Model
 Summary of Linear Regression
 
 Let's use this model to answer the following questions:
-    1) Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
-       - Vehicle Lengeth and Ground Clearance provide a non-random amount of variance based on their p-values being less than 0.05.
-    2) Is the slope of the linear model considered to be zero? Why or why not?
-        - No, the coefficients are also slop indicatoras and none of the coefficients are zero.
-    3) Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
-        - The R-suared value indicated that this model will be approximately 71% accurate in predicting the mpg.
+    1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+       Vehicle Lengeth and Ground Clearance provide a non-random amount of variance based on their p-values being less than 0.05.
+    2. Is the slope of the linear model considered to be zero? Why or why not?
+        No, the coefficients are also slop indicatoras and none of the coefficients are zero.
+    3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+        The R-suared value indicated that this model will be approximately 71% accurate in predicting the mpg.
 
 ## Summary Statistics on Suspension Coils
 According to the design specifications for the MechaCar suspension coils, the variance of the suspension coils must not exceed 100 pounds per square inch. Let's take a look at the suspension coil test results.
