@@ -18,3 +18,24 @@ Let's use this model to answer the following questions:
         The R-suared value indicated that this model will be approximately 71% accurate in predicting the mpg.
 
 ## Summary Statistics on Suspension Coils
+According to the design specifications for the MechaCar suspension coils, the variance of the suspension coils must not exceed 100 pounds per square inch. Let's take a look at the suspension coil test results.
+
+![Total summary](images/total_summary.png)
+Summary of all test results.
+
+![Lot Summary](images/lot_summary.png)
+Summary of test results by lot.
+
+Let's use these summaries to answer the following question:
+    Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+        Looking at the summary of all test results we see that the total variance is 62.29356, which is below the 100 PSI specification, but when we look at the individual lots we can see that Lot3 is actually out of spec at 170.2861224.
+
+## T-Tests on Suspension Coils
+Lets perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
+
+![T-Tests](images/T-Tests.png)
+
+Looking at the p=values we can see that the only lot that is statistically different from the mean of 1,500 PSI is Lot3)
+
+## Study Design: MechaCar vs Competition
+
