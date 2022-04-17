@@ -27,8 +27,8 @@ Summary of all test results.
 Summary of test results by lot.
 
 Let's use these summaries to answer the following question:
-    Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
-        Looking at the summary of all test results we see that the total variance is 62.29356, which is below the 100 PSI specification, but when we look at the individual lots we can see that Lot3 is actually out of spec at 170.2861224.
+1. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+   - Looking at the summary of all test results we see that the total variance is 62.29356, which is below the 100 PSI specification, but when we look at the individual lots we can see that Lot3 is actually out of spec at 170.2861224.
 
 ## T-Tests on Suspension Coils
 Lets perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
@@ -38,9 +38,13 @@ Lets perform t-tests to determine if all manufacturing lots and each lot individ
 Looking at the p=values we can see that the only lot that is statistically different from the mean of 1,500 PSI is Lot3)
 
 ## Study Design: MechaCar vs Competition
+Hypothesis: MechaCar has better mpg than the competition.
 
-
-    What metric or metrics are you going to test?
-    What is the null hypothesis or alternative hypothesis?
-    What statistical test would you use to test the hypothesis? And why?
-    What data is needed to run the statistical test?
+1. What metric or metrics are you going to test?
+   - We will compare the mpg of MechaCar against competitors of similar class. 
+2. What is the null hypothesis or alternative hypothesis?
+   - The MechaCar does not have better MPG than the competition. 
+3. What statistical test would you use to test the hypothesis? And why?
+   - ANOVA test will probably work best to compare multiple competitors against the MechaCar at the same time.
+4. What data is needed to run the statistical test?
+   - We will need similar datasets for mpg for each competitor that we want to check.
